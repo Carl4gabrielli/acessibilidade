@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrimônio Cultural Brasileiro</title>
+  <meta name="description" content="Conheça o Patrimônio Cultural Brasileiro: tradições, festas, músicas, arquitetura e saberes que fazem parte da nossa identidade nacional.">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="bg-header shadow-sm">
+    <nav class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+      <a href="#inicio">
+        <img src="img/logo.png" class="nav-img" alt="Logo do Patrimônio Cultural Brasileiro" loading="lazy">
+      </a>
+
+      <ul class="nav gap-4">
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#patrimonio">Patrimônio</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Acessibilidade -->
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-outline-light fw-bold" aria-expanded="false" aria-controls="opcoes-acessibilidade">Acessibilidade</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade d-none mt-2">
+          <button id="aumentar-fonte" class="btn btn-light btn-sm fw-bold" aria-label="Aumentar fonte">A+</button>
+          <button id="diminuir-fonte" class="btn btn-light btn-sm fw-bold" aria-label="Diminuir fonte">A-</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+
+    <!-- Início -->
+    <section id="inicio" class="my-5">
+      <div class="inicio-fundo d-flex flex-wrap justify-content-between align-items-center p-4 rounded-4">
+        <div class="esquerda-conteudo text-white">
+          <h1 class="display-6 fw-bold">Preservar nossa memória é valorizar nossa identidade</h1>
+          <p class="lead">Explore a riqueza do Patrimônio Cultural Brasileiro</p>
+          <a href="#patrimonio" class="btn btn-lg btn-gold fw-semibold mt-3">Conhecer</a>
+        </div>
+        <img src="img/patrimonio-intro.png"
+          alt="Representação do patrimônio cultural brasileiro: arquitetura, festas e música"
+          class="img-fluid img-inicio rounded-4 shadow-lg mt-4 mt-md-0">
+      </div>
+    </section>
+
+    <!-- Patrimônio -->
+    <section id="patrimonio" class="my-5 py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-5 text-center">
+          <img src="img/patrimonio-cultural.png" class="rounded-pill shadow-lg img-fluid"
+            alt="Ilustração de manifestações culturais brasileiras" loading="lazy">
+        </div>
+        <div class="col-md-7">
+          <h2 class="fw-bold mb-3">O que é Patrimônio Cultural?</h2>
+          <p>
+            O patrimônio cultural é o conjunto de bens <strong>materiais</strong> (como igrejas, centros históricos e obras de arte) 
+            e <strong>imateriais</strong> (como músicas, festas populares, saberes e tradições orais) que representam 
+            a identidade e a memória de um povo.
+          </p>
+          <p>
+            No Brasil, essa diversidade se manifesta em cada canto: do samba e frevo ao artesanato, 
+            da culinária às cidades coloniais. Preservar o patrimônio é manter viva a nossa história.
+          </p>
+          <small class="text-muted"><em>Fonte: IPHAN – Instituto do Patrimônio Histórico e Artístico Nacional</em></small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="my-5">
+      <h2 class="text-center fw-bold mb-4">Galeria Cultural</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3 text-center">
+          <img src="img/olinda.jpg" class="img-fluid rounded-4 shadow" alt="Carnaval de Olinda" loading="lazy">
+          <p class="mt-2">Carnaval de Olinda</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center">
+          <img src="img/pelourinho.jpg" class="img-fluid rounded-4 shadow" alt="Pelourinho em Salvador" loading="lazy">
+          <p class="mt-2">Pelourinho - Salvador</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center">
+          <img src="img/samba.jpg" class="img-fluid rounded-4 shadow" alt="Samba como patrimônio imaterial" loading="lazy">
+          <p class="mt-2">Samba - Patrimônio Imaterial</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center">
+          <img src="img/artesanato.jpg" class="img-fluid rounded-4 shadow" alt="Artesanato popular brasileiro" loading="lazy">
+          <p class="mt-2">Artesanato Popular</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="my-5 py-5">
+      <div class="container p-4 rounded-5 formulario shadow">
+        <h2 class="mb-4 fw-bold text-center">Entre em contato</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Digite seu nome completo" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="Digite seu email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="form-control rounded-4" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-gold btn-lg rounded-pill">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center p-4 bg-dark text-light mt-5">
+    <p class="mb-2">Siga nossas redes:</p>
+    <a href="#" class="text-light mx-2"><i class="bi bi-whatsapp fs-4"></i></a>
+    <a href="#" class="text-light mx-2"><i class="bi bi-instagram fs-4"></i></a>
+    <a href="#" class="text-light mx-2"><i class="bi bi-tiktok fs-4"></i></a>
+    <p class="mt-3 small">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
