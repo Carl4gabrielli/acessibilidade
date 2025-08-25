@@ -1,0 +1,57 @@
+:root {
+  --dourado: #d4a017;
+  --verde: #1a4d2e;
+  --azul-colonial: #1e3a5f;
+  --bege: #fdf8f1;
+}
+
+/* Reset */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bege);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.bg-header {
+  background: linear-gradient(90deg, var(--azul-colonial), var(--verde));
+}
+.nav-link {
+  color: #fff !important;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: var(--dourado) !important;
+}
+
+/* Botão */
+.btn-gold {
+  background-color: var(--dourado);
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.btn-gold:hover {
+  background-color: #b98a12;
+}
+
+/* Início */
+.inicio-fundo {
+  background: linear-gradient(to right, var(--verde), var(--azul-colonial));
+  color: #fff;
+}
+
+/* Formulário */
+.formulario {
+  background: #fff;
+  max-width: 700px;
+}
+
+/* Galeria */
+#galeria img {
+  transition: transform 0.3s ease;
+}
+#galeria img:hover {
+  transform: scale(1.05);
+}
